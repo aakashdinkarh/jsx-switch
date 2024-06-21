@@ -23,6 +23,5 @@ export function Switch({ children }) {
 			defaultCase = child;
 		}
 	});
-
 	return matchChild ?? defaultCase ?? null;
 }
