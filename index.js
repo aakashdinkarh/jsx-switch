@@ -10,7 +10,6 @@ export function Default({ children }) {
 export function Switch({ children }) {
 	let matchChild = null;
 	let defaultCase = null;
-
 	React.Children.forEach(children, (child) => {
 		if (!matchChild && child.type === Case) {
 			const { condition } = child.props;
